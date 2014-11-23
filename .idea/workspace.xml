@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e0cfb77-c4b6-4550-8b09-a4ce95ee1185" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sensor.py" afterPath="$PROJECT_DIR$/sensor.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thermostat.py" afterPath="$PROJECT_DIR$/thermostat.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zones.py" afterPath="$PROJECT_DIR$/zones.py" />
     </list>
@@ -43,8 +41,8 @@
       <file leaf-file-name="zones.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zones.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -80,8 +78,8 @@
         <option value="$PROJECT_DIR$/furnace control.py" />
         <option value="$PROJECT_DIR$/furnace_control.py" />
         <option value="$PROJECT_DIR$/sensor.py" />
-        <option value="$PROJECT_DIR$/zones.py" />
         <option value="$PROJECT_DIR$/thermostat.py" />
+        <option value="$PROJECT_DIR$/zones.py" />
       </list>
     </option>
   </component>
@@ -325,7 +323,11 @@
       <created>1416758784000</created>
       <updated>1416758784000</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created zones, fixed some bugs">
+      <created>1416762344071</created>
+      <updated>1416762344071</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -428,8 +430,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zones.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
           <folding />
         </state>
       </provider>
