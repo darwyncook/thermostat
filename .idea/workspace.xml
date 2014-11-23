@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e0cfb77-c4b6-4550-8b09-a4ce95ee1185" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sensor.py" afterPath="$PROJECT_DIR$/sensor.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zones.py" afterPath="$PROJECT_DIR$/zones.py" />
     </list>
     <ignored path="thermostat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,18 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sensor.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sensor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1600">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <element signature="e#20#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="zones.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zones.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,13 +36,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thermostat.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="thermostat.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thermostat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5608108" vertical-offset="10" max-vertical-offset="750">
+            <state vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="750">
               <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
               <folding>
                 <element signature="e#20#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sensor.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sensor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6054054" vertical-offset="752" max-vertical-offset="1600">
+              <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+              <folding>
+                <element signature="e#20#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,9 +77,9 @@
       <list>
         <option value="$PROJECT_DIR$/furnace control.py" />
         <option value="$PROJECT_DIR$/furnace_control.py" />
-        <option value="$PROJECT_DIR$/sensor.py" />
         <option value="$PROJECT_DIR$/thermostat.py" />
         <option value="$PROJECT_DIR$/zones.py" />
+        <option value="$PROJECT_DIR$/sensor.py" />
       </list>
     </option>
   </component>
@@ -327,7 +327,11 @@
       <created>1416762344071</created>
       <updated>1416762344071</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created zones, fixed some bugs">
+      <created>1416765204007</created>
+      <updated>1416765204007</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -418,12 +422,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sensor.py">
+    <entry file="file://$PROJECT_DIR$/thermostat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1600">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="750">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
           <folding>
-            <element signature="e#20#29#0" expanded="true" />
+            <element signature="e#20#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -436,12 +440,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thermostat.py">
+    <entry file="file://$PROJECT_DIR$/sensor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5608108" vertical-offset="10" max-vertical-offset="750">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.6054054" vertical-offset="752" max-vertical-offset="1600">
+          <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
           <folding>
-            <element signature="e#20#31#0" expanded="true" />
+            <element signature="e#20#29#0" expanded="true" />
           </folding>
         </state>
       </provider>

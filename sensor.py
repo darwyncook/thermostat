@@ -46,7 +46,7 @@ class Temperature:
                 # value error if the temp can't be converted to float, index error if the read file
                 # didn't read enough lines from the file, IOError and FileNotFoundError are the same
                 # but for different versions of Python
-        except (ValueError, IndexError, IOError, FileNotFoundError):
+        except (ValueError, IndexError, IOError):
                 print('There was a problem with the file\n')
                 raise TemperatureReadError
 
