@@ -3,7 +3,7 @@ import os
 import time
 import datetime
 
-thermo1 = 'sys/bus/w1/devices/28-0000065bb6cd/w1_slave'
+thermo1 = '28-0000065bb6cd'
 os.system('modprobe w1-gpio')
 os.system('modprobe w1-therm')
 
@@ -36,7 +36,8 @@ class Temperature:
 
     def read_temp(self):
         try:
-            with open(self.sensor, 'r+', encoding='utf-8') as temp_sensor:
+            sensor_file = 'sys/bus/w1/devices/' + self.sensor + '/w1_slave'
+            with open(sensor_file, 'r+', encoding='utf-8') as temp_sensor:
                 temps = temp_sensor.readlines()
                 temps[0] = temps[0].rstrip('\r\n')
                 temps[1] = temps[1].rstrip('\r\n')
