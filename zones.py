@@ -3,10 +3,10 @@ from sensor import *
 
 
 class Zone:
-    def __init(self, sensor, GPIO_pin, zones):
-        self.GPIO = GPIO_pin
+    def __init(self, sensor, zones_dict):
+        self.GPIO = zones_dict[sensor][1]
         self.switch = None
-        self.temp = Temperature(sensor, zones)
+        self.temp = Temperature(sensor, zones_dict)
         self.goal = self.read_goal()
 
     def get_current_temp(self):

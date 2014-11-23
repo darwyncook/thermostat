@@ -1,6 +1,5 @@
 __author__ = 'cook'
 import os
-import time
 import datetime
 
 
@@ -21,7 +20,7 @@ class Temperature:
         self.time = ''
         self.sensor = temp_sensor
         try:
-            self.sensor_location = zones[self.sensor]
+            self.sensor_location = zones[self.sensor][0]
             self.read_temp()
         except KeyError:
             raise TemperatureReadError
@@ -44,6 +43,9 @@ class Temperature:
                     self.time = datetime.datetime.now()
                 else:
                     raise TemperatureReadError
+                # value error if the temp can't be converted to float, index error if the read file
+                # didn't read enough lines from the file, IOError and FileNotFoundError are the same
+                # but for different versions of Python
         except (ValueError, IndexError, IOError, FileNotFoundError):
                 print('There was a problem with the file\n')
                 raise TemperatureReadError
@@ -54,6 +56,3 @@ class Temperature:
 
     def write_temp(self, db):
         pass  # write the temp out to a database
-
-
-
