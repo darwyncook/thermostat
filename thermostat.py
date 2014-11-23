@@ -66,7 +66,7 @@ def send_error():
 
 while True:
     try:
-        current_temp = Temperature(thermo1)
+        current_temp = Temperature(thermo1,time.clock())
         print(current_temp)
     except TemperatureReadError:
         send_error()
