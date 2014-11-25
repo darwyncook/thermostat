@@ -8,7 +8,7 @@ class TemperatureReadError(ValueError):
 
 
 class Temperature:
-    def __init__(self, temp_sensor, zones):  # start_time should be the time in seconds
+    def __init__(self, temp_sensor):  # start_time should be the time in seconds
         os.system('modprobe w1-gpio')
         os.system('modprobe w1-therm')
         self.celcius = -90
@@ -16,7 +16,6 @@ class Temperature:
         self.time = ''
         self.sensor = temp_sensor
         try:
-            self.sensor_location = zones[self.sensor][0]
             self.read_temp()
         except KeyError:
             TemperatureReadError.zone = temp_sensor
@@ -51,8 +50,4 @@ class Temperature:
                 raise TemperatureReadError
 
     def __str__(self):
-        return 'The temperature in ' + self.sensor_location + ' at ' + str(self.time) + ' was ' +\
-               str(self.fahrenheit)
-
-    def write_temp_db(self, db):
-        pass  # write the temp out to a database
+        return str(self.fahrenheit)

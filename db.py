@@ -4,16 +4,18 @@ from mysql.connector import errorcode
 
 
 ## The database should have places for:
-##    probe # - which is a string
+##    tdate - datetime
+##    ttime - datetime
+##    sensor - which is a string
 ##    zone - string
-##    date - datetime
-##    time - datetime
-##    temperature in F - Number
-##    temperature in C - Number
+##    celcius - Number
+##    fahrenheit - Number
 
-class db:
+
+class DB:
     config = {'user': 'monitor', 'password': 'Pi314159', 'host': 'localhost', 'database': 'temps',
-          'raise_on_warnings': True}
+              'raise_on_warnings': True}
+
     def __init__(self):
         try:
             self.cnx = mysql.connector.connect(**self.config)

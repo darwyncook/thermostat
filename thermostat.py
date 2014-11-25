@@ -22,7 +22,7 @@ while True:
         for sensor in zones:
             zone[sensor].get_current_temp()
             zone[sensor].write_temp_db()
-            print(zone[sensor].temp)
+            print(zone[sensor])
         time.sleep(60)
     except TemperatureReadError:
         send_error(TemperatureReadError.sensor,zones)
